@@ -4,7 +4,7 @@
 
 - 대상 저장소: [`woofam/3sec`](https://github.com/woofam/3sec)
 - 공개 홈페이지: [https://woofam.github.io/3sec/](https://woofam.github.io/3sec/)
-- 3초 메뉴: [토스 앱에서 열기](intoss://3sec-menu)
+- 3초 메뉴: [서비스 소개 및 실행 페이지 열기](https://woofam.github.io/3sec/#product)
 
 ## 페이지 구성
 
