@@ -1,0 +1,17 @@
+{
+  "name": "3SEC",
+  "short_name": "3SEC",
+  "description": "일상의 결정을 더 가볍게 만드는 생활 기술 스튜디오",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#1769ff",
+  "icons": [
+    {
+      "src": "assets/images/brand-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
