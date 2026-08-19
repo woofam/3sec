@@ -5,6 +5,15 @@
 - 대상 저장소: [`woofam/3sec`](https://github.com/woofam/3sec)
 - 공개 홈페이지: [https://woofam.github.io/3sec/](https://woofam.github.io/3sec/)
 - 3초 메뉴: [서비스 소개 및 실행 페이지 열기](https://woofam.github.io/3sec/#product)
+- 브랜드·웹 스타일 기준: [`BRAND_STYLE_GUIDE.md`](BRAND_STYLE_GUIDE.md)
+
+## 브랜드 스타일 관리
+
+브랜드 홈과 향후 추가할 3초 키친·3초 가성비·가이드·정책 페이지는 [`BRAND_STYLE_GUIDE.md`](BRAND_STYLE_GUIDE.md)를 기준으로 제작합니다. 전역 색상과 글꼴, 공통 레이아웃은 [`assets/css/site.css`](assets/css/site.css)의 토큰과 공통 클래스를 사용합니다.
+
+- 화면을 수정하기 전에 브랜드 가이드의 새 페이지 체크리스트를 확인합니다.
+- 방문자용 CTA에는 GitHub 저장소 대신 실제 서비스·가이드·정책 주소를 사용합니다.
+- 전역 디자인 변경은 CSS 토큰과 브랜드 가이드를 함께 갱신합니다.
 
 ## 페이지 구성
 
@@ -33,6 +42,7 @@ python3 -m http.server 4173 --directory company-site
 ```text
 company-site/
 ├── .github/workflows/deploy-pages.yml
+├── BRAND_STYLE_GUIDE.md
 ├── assets/
 │   ├── css/site.css
 │   ├── images/brand-mark.svg
