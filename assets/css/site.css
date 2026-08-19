@@ -1,3 +1,12 @@
+/*
+ * 3SEC BRAND STYLE SOURCE OF TRUTH
+ * --------------------------------
+ * 이 파일은 브랜드 홈과 제품·가이드·정책 페이지가 공유하는 시각 기준입니다.
+ * 전역 색상, 글꼴, 여백을 바꾸기 전에 ../../BRAND_STYLE_GUIDE.md를 확인하세요.
+ * 핵심 원칙: 코발트 블루 1색, 넓은 여백, 카드보다 타이포그래피, 절제된 모션.
+ */
+
+/* 1. Brand tokens: 새 페이지에서도 아래 변수를 우선 사용합니다. */
 :root {
   --blue: #1769ff;
   --blue-dark: #0d4bca;
@@ -10,6 +19,7 @@
   --latin: "DM Sans", "Noto Sans KR", sans-serif;
 }
 
+/* 2. Foundations and shared layout */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -50,6 +60,7 @@ button { font: inherit; }
 }
 .skip-link:focus { transform: translateY(0); }
 
+/* 3. Global navigation: 스크롤 후에도 조용한 반투명 표면을 유지합니다. */
 .site-header {
   position: fixed;
   inset: 0 0 auto;
@@ -71,6 +82,7 @@ button { font: inherit; }
 .menu-button { display: none; width: 42px; height: 42px; border: 0; background: transparent; }
 .menu-button span:not(.sr-only) { display: block; width: 22px; height: 2px; margin: 6px auto; background: var(--ink); }
 
+/* 4. Hero: 한 개의 메시지와 3 / SEC 대표 그래픽만 사용합니다. */
 .hero {
   min-height: 820px;
   padding-top: 150px;
@@ -109,6 +121,7 @@ button { font: inherit; }
 .orbit::after { content: ""; position: absolute; top: 9%; left: 19%; width: 12px; height: 12px; border-radius: 50%; background: var(--blue); }
 .orbit-two::after { top: 75%; left: 83%; background: var(--white); }
 
+/* 5. Story sections: 섹션마다 설명·제품·원칙 중 한 가지 역할만 둡니다. */
 .about-section { color: var(--white); background: var(--ink); }
 .split-layout { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 10vw; align-items: start; }
 .section h2 { font-size: clamp(46px, 5.8vw, 82px); font-weight: 800; }
@@ -145,10 +158,12 @@ button { font: inherit; }
 .footer-inner { min-height: 140px; display: flex; align-items: center; gap: 40px; font-size: 13px; }
 .footer-brand { margin-right: auto; color: var(--white); }
 
+/* 6. Motion language: reveal, orbit, button lift 외의 모션은 신중하게 추가합니다. */
 .js [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity 700ms ease, transform 700ms cubic-bezier(0.22, 1, 0.36, 1); }
 .js [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
 @keyframes orbit { to { transform: rotate(360deg); } }
 
+/* 7. Responsive rules: 공통 분기점 900px / 560px를 유지합니다. */
 @media (max-width: 900px) {
   .shell { width: min(100% - 36px, 720px); }
   .section { padding: 100px 0; }
@@ -198,6 +213,7 @@ button { font: inherit; }
   .footer-brand { margin-bottom: 14px; }
 }
 
+/* 8. Accessibility: 모션 감소 환경에서는 모든 내용을 즉시 표시합니다. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
