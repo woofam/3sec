@@ -1,0 +1,100 @@
+<!doctype html>
+<!--
+  3초 키친 제품 소개 페이지
+  TODO[kitchen-release]: 공식 제품명, 최종 앱 화면, 지원 범위가 바뀌면 본문과 OG 설명을 함께 갱신합니다.
+  브랜드 표현 기준은 ../BRAND_STYLE_GUIDE.md를 따릅니다.
+-->
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="냉장고 속 재료와 지금의 상황으로 오늘의 메뉴를 빠르게 결정하는 3초 키친을 소개합니다." />
+    <meta name="theme-color" content="#1769ff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="3초 키친 — 오늘 뭘 먹을지, 3초 만에" />
+    <meta property="og:description" content="냉장고 재료로 시작하는 빠르고 실용적인 메뉴 결정 도구." />
+    <title>3초 키친 — 3SEC</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="icon" href="../assets/images/brand-mark.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <script src="../assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <header class="site-header" data-header>
+      <div class="shell nav-wrap">
+        <a class="brand" href="../" aria-label="3SEC 브랜드 홈">
+          <img src="../assets/images/brand-mark.svg" alt="" width="34" height="34" />
+          <span>3SEC</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">메뉴 열기</span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+          <a href="../">브랜드</a>
+          <a href="../value/">3초 가성비</a>
+          <a href="guide/">사용법</a>
+          <a class="nav-cta" href="intoss://3sec-menu" aria-label="토스 앱에서 3초 키친 열기">앱에서 시작하기</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="subpage-main">
+      <section class="page-hero shell">
+        <div data-reveal>
+          <span class="status-badge">서비스 운영 중</span>
+          <p class="page-kicker">3SEC PRODUCT · KITCHEN</p>
+          <h1 class="page-title">오늘 뭘 먹을지,<br /><span>3초 만에.</span></h1>
+          <p class="page-lead">냉장고 속 재료와 지금의 상황을 고르면 집밥부터 배달·외식까지, 오늘의 메뉴를 빠르게 결정해 드립니다.</p>
+          <div class="page-actions">
+            <a class="button button-primary" href="intoss://3sec-menu">토스에서 시작하기</a>
+            <a class="button button-secondary" href="guide/">사용법 보기</a>
+          </div>
+        </div>
+        <div class="page-symbol" aria-hidden="true" data-reveal>
+          <strong>K</strong><small>KITCHEN</small>
+        </div>
+      </section>
+
+      <!-- TODO[kitchen-content]: 실제 앱 화면과 사용자 검증 결과가 준비되면 기능 설명을 구체화합니다. -->
+      <section class="content-section">
+        <div class="shell">
+          <div class="content-heading" data-reveal>
+            <p class="section-label">WHAT IT DOES</p>
+            <h2>고민보다 먼저<br />오늘의 한 끼를 시작합니다.</h2>
+          </div>
+          <ul class="info-list">
+            <li data-reveal><strong>재료로 시작</strong><span>냉장고에 있는 재료를 골라 만들기 좋은 메뉴를 확인합니다.</span></li>
+            <li data-reveal><strong>상황에 맞게</strong><span>아이 연령, 식사 상황, 지금의 기분을 선택에 반영합니다.</span></li>
+            <li data-reveal><strong>행동까지 연결</strong><span>결정한 메뉴를 장보기와 배달 같은 다음 행동으로 이어갑니다.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section is-tinted">
+        <div class="shell">
+          <div class="content-heading" data-reveal>
+            <p class="section-label">HELP &amp; POLICY</p>
+            <h2>사용 중 필요한 내용을<br />한곳에서 확인하세요.</h2>
+          </div>
+          <ul class="link-list">
+            <li><strong>사용 가이드</strong><span><a href="guide/">3초 키친 사용 순서 보기 →</a></span></li>
+            <li><strong>개인정보</strong><span><a href="../privacy/">개인정보 처리방침 준비 페이지 →</a></span></li>
+            <li><strong>이용약관</strong><span><a href="../terms/">이용약관 준비 페이지 →</a></span></li>
+            <li><strong>고객지원</strong><span><a href="../support/">지원 안내 보기 →</a></span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <a class="brand footer-brand" href="../"><img src="../assets/images/brand-mark.svg" alt="" width="30" height="30" /><span>3SEC</span></a>
+        <p>Small decisions, better days.</p><p>© <span data-year></span> 3SEC.</p>
+      </div>
+    </footer>
+  </body>
+</html>
