@@ -7,6 +7,20 @@
 - 3초 메뉴: [서비스 소개 및 실행 페이지 열기](https://woofam.github.io/3sec/#product)
 - 브랜드·웹 스타일 기준: [`BRAND_STYLE_GUIDE.md`](BRAND_STYLE_GUIDE.md)
 
+## 준비된 페이지 경로
+
+향후 제품 출시와 앱 내 도움말 연결을 위해 다음 경로를 미리 구성했습니다.
+
+- 3초 키친: [`kitchen/`](kitchen/)
+- 3초 키친 사용 가이드: [`kitchen/guide/`](kitchen/guide/)
+- 3초 가성비 준비 페이지: [`value/`](value/)
+- 3초 가성비 사용 가이드 골격: [`value/guide/`](value/guide/)
+- 개인정보 처리방침 골격: [`privacy/`](privacy/)
+- 이용약관 골격: [`terms/`](terms/)
+- 고객지원 허브 골격: [`support/`](support/)
+
+`준비 중` 또는 `초안`으로 표시된 페이지는 검색 노출을 막는 `noindex`가 설정되어 있습니다. 실제 서비스 정보와 법률 검토가 완료된 뒤 각 파일 상단의 `TODO[...]` 주석을 확인하고 문구·시행일·링크를 교체합니다.
+
 ## 브랜드 스타일 관리
 
 브랜드 홈과 향후 추가할 3초 키친·3초 가성비·가이드·정책 페이지는 [`BRAND_STYLE_GUIDE.md`](BRAND_STYLE_GUIDE.md)를 기준으로 제작합니다. 전역 색상과 글꼴, 공통 레이아웃은 [`assets/css/site.css`](assets/css/site.css)의 토큰과 공통 클래스를 사용합니다.
@@ -48,6 +62,15 @@ company-site/
 │   ├── images/brand-mark.svg
 │   ├── images/product-preview.svg
 │   └── js/site.js
+├── kitchen/
+│   ├── index.html
+│   └── guide/index.html
+├── value/
+│   ├── index.html
+│   └── guide/index.html
+├── privacy/index.html
+├── terms/index.html
+├── support/index.html
 ├── .nojekyll
 ├── 404.html
 ├── index.html
